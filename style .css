@@ -1,0 +1,80 @@
+body {
+/* Defina o degradê de preto */
+/* Defina as cores de gradiente */
+background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(86, 51, 2));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .login-box {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #000000ca; /* Define a cor do texto dentro do quadrado branco */
+    border: 2px solid #FFA500; /* Adiciona uma borda sólida laranja */
+    height: 70vh;
+    width: 70vh;
+  }
+
+  input[type="text"],
+input[type="password"],
+input[type="email"] {
+    border: 2px solid #FFA500; /* Adds a solid orange border */
+    background-color: #ffffff3c; 
+    border-radius: 20px;
+    color: #ffffff;
+    width: 330px;
+    margin-left: 20px;
+
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover {
+    color: rgba(31, 44, 56, 0.664);
+    border-color: #ffa600; /* Change border color to white on hover */
+    background-color: #ffa600; 
+    
+}
+
+.btn.btn-primary {
+    background-color: #ffa600; /* Orange color */
+    border: none;
+    width: 380px;
+    border-radius: 30px;
+    width: 330px;
+    margin-left: 20px;
+}
+
+.btn.btn-primary:hover {
+    background-color: #000; /* Orange color */
+
+}
+
+
+.form-control{
+    background-color: #f2f2f2; 
+    width: 30px;
+    height: 30p;
+}
+
+
+/* Change the text color inside input fields to gray when not focused */
+input[type="text"]:not(:focus),
+input[type="password"]:not(:focus),
+input[type="email"]:not(:focus) {
+    color: #ffffff; /* Gray color */
+}
+
+/* Change the placeholder text color to white */
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="email"]::placeholder {
+    color: #ffffffc3; /* White color */
+}
+
+
