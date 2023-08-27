@@ -120,3 +120,40 @@ h1 .cordiferente{
     background-color: var(--color-white);
     font-family: 'Poppins', sans-serif;
 }
+
+.categorias{
+    background-color: var(--color-white);
+}
+.categorias h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: start;
+    font-size: 3em;
+    color: var(--color-black);
+    margin-left: 2em;
+}
+
+/*barra de rolagem */
+::-webkit-scrollbar {
+    width: 8px; 
+   
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-white);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-orange); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-black); 
+}
+
+
+/* @media (min-width: 667x) {
+
+} */
