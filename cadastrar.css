@@ -1,4 +1,3 @@
-/* Estilo global para o corpo da página */
 body {
     background-image: radial-gradient(circle at 13.13% -2.65%, #e6cf74 0, #ffcd4b 16.67%, #e69c1d 33.33%, #ce810d 50%, #e27600 66.67%, #c25100 83.33%, #9c3100 100%);
     font-family: 'Poppins', sans-serif;
@@ -9,7 +8,6 @@ h2 {
     margin: 10%;
 }
 
-/* Estilo para o contêiner principal */
 .container {
     position: relative;
     margin-top: 30px;
@@ -65,9 +63,8 @@ h2 {
     font-weight: 600;
 }
 
-/* Adicione margem inferior para espaçamento entre os campos de entrada */
 .mb-3 {
-    margin-bottom: 20px; /* Ajuste conforme necessário */
+    margin-bottom: 20px; 
 }
 
 .mb-3.form-check .form-check-label {
