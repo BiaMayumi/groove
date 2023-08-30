@@ -1,102 +1,75 @@
+/* Estilo global para o corpo da página */
 body {
-    /* Defina o degradê de preto */
-    /* Defina as cores de gradiente */
-    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(86, 51, 2));
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-      }
-      .login-box {
-        background-color: #000000;
-        padding:20px;
-        border-radius: 18px;
-        color: #000000ca; /* Define a cor do texto dentro do quadrado branco */
-        border: 2px solid #FFA500; /* Adiciona uma borda sólida laranja */
-        height: 94vh;
-        width: 80vh;
-      }
-    
-      input[type="text"],
-    input[type="password"],
-    input[type="email"] {
-        border: 2px solid #FFA500; /* Adds a solid orange border */
-        background-color: #ffffff3c; 
-        border-radius: 20px;
-        color: #ffffff;
-        width: 330px;
-        margin-left: 20px;
-    
-    }
-    
-    input[type="text"]:hover,
-    input[type="password"]:hover,
-    input[type="email"]:hover {
-        color: rgba(31, 44, 56, 0.664);
-        border-color: #ffa600; /* Change border color to white on hover */
-        background-color: #ffa600; 
-        
-    }
-    
-    .btn.btn-primary {
-        background-color: #ffa600; /* Orange color */
-        border: none;
-        border-radius: 30px;
-        width: 330px;
-        left: 3em;
-    position: relative;   top: 20px; }
-    
-    
-    .btn.btn-primary:hover {
-        background-color: #000; /* Orange color */
-    
-    }
-    
-    
-    .form-control{
-        background-color: #f2f2f2; 
-        width: 30px;
-        position: relative;
-        top: 10px;
-        left: 1.7em;
-    }
-    
-    
-    /* Change the text color inside input fields to gray when not focused */
-    input[type="text"]:not(:focus),
-    input[type="password"]:not(:focus),
-    input[type="email"]:not(:focus) {
-        color: #ffffff; /* Gray color */
-    }
-    
-    /* Change the placeholder text color to white */
-    input[type="text"]::placeholder,
-    input[type="password"]::placeholder,
-    input[type="email"]::placeholder {
-        color: #ffffffc3; /* White color */
-    }
-    
-    
-.text-center{
-    position: relative;
-    top: 60px;
-}    
-
-.form-check-label{
-    color: #f2f2f2;
-    font-size: 14px;
+    background-image: radial-gradient(circle at 13.13% -2.65%, #e6cf74 0, #ffcd4b 16.67%, #e69c1d 33.33%, #ce810d 50%, #e27600 66.67%, #c25100 83.33%, #9c3100 100%);
     font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin: 10%;
+}
+
+/* Estilo para o contêiner principal */
+.container {
     position: relative;
-    top: 30px;
-    left: 45px;
+    margin-top: 30px;
+    width: 600px;
+    height: 700px;
+    background-color: #fff;
+    box-shadow: 0 0 10px;
+    border-radius: 30px;
 
 }
 
-.form-check-input{
-    position: relative;
-    top: 30px;
-    left: 45px;}
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
 
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #F0960F;
+    border-radius: 20px;
+}
 
+.btn {
+    background-color: #F0960F;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.mt-3 {
+    color: #000000;
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 6rem  4rem;
+}
+
+.mt-3 a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Adicione margem inferior para espaçamento entre os campos de entrada */
+.mb-3 {
+    margin-bottom: 20px; /* Ajuste conforme necessário */
+}
+
+.mb-3.form-check .form-check-label {
+    color: #000;
+}
