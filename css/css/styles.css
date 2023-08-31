@@ -1,94 +1,18 @@
 * {
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif;
   }
   
   body {
-    background-color: #252525;
+    background-color: #050A30;
     color: #FFF;
-    
-  }
-
-  .img{
-    width: 130px;
-    position: absolute;
-    
   }
   
   .primary-bg-color {
-    background-color: #000000;
+    background-color: #050A30;
   }
-
-  .form {
-    --width-of-input: 200px;
-    --border-height: 1px;
-    --border-before-color: rgba(221, 221, 221, 0.39);
-    --border-after-color: #5891ff;
-    --input-hovered-color: #4985e01f;
-    position: relative;
-    width: var(--width-of-input);
-   }
-   /* styling of Input */
-   .input {
-    color: #fff;
-    font-size: 0.9rem;
-    background-color: transparent;
-    width: 100%;
-    box-sizing: border-box;
-    padding-inline: 0.5em;
-    padding-block: 0.7em;
-    border: none;
-    border-bottom: var(--border-height) solid var(--border-before-color);
-   }
-   /* styling of animated border */
-   .input-border {
-    position: absolute;
-    background: var(--border-after-color);
-    width: 0%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    transition: 0.3s;
-   }
-   /* Hover on Input */
-   input:hover {
-    background: var(--input-hovered-color);
-   }
-   
-   input:focus {
-    outline: none;
-   }
-   /* here is code of animated border */
-   input:focus ~ .input-border {
-    width: 100%;
-   }
-   /* === if you want to do animated border on typing === */
-   /* remove input:focus code and uncomment below code */
-   /* input:valid ~ .input-border{
-     width: 100%;
-   } */
-
-
-   /* Hover on Input */
-   input:hover {
-    background: var(--input-hovered-color);
-   }
-   
-   input:focus {
-    outline: none;
-   }
-   /* here is code of animated border */
-   input:focus ~ .input-border {
-    width: 100%;
-   }
-   /* === if you want to do animated border on typing === */
-   /* remove input:focus code and uncomment below code */
-   /* input:valid ~ .input-border{
-     width: 100%;
-   } */
   
   .secondary-bg-color {
-    background-color: #F0960F;
+    background-color: #7EC8E3;
   }
   
   .light-bg-color {
@@ -100,18 +24,29 @@
   }
   
   .primary-color {
-    color: #F0960F;
-    font-family: 'Poppins', sans-serif;
-font-family: 'Raleway', sans-serif;
+    color: #7EC8E3;
   }
   
   .secondary-color {
-    color: #626262;
+    color: #7EC8E3;
   }
   
   .light-color {
     color: #FCF5EB
   }
+  .silver{
+    color: rgb(143, 143, 143);
+  }
+  .gold{
+    color: rgb(206, 194, 79);
+  }
+  .diamond{
+    color: rgb(0, 73, 95);
+  }
+  .platinium{
+    color: rgb(207, 207, 207);
+  }
+  
   
   /* NAVBAR */
   #navbar .navbar-nav {
@@ -127,18 +62,25 @@ font-family: 'Raleway', sans-serif;
   #navbar button {
     color: #FFF;
   }
-
-  
   
   #navbar li {
     position: relative;
-    margin-left: 10em;
   }
   
   #navbar i {
     font-size: 20px;
   }
   
+  #navbar span {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #0000FF;
+    text-align: center;
+  }
   
   #bag-item span {
     left: 20px;
@@ -148,8 +90,6 @@ font-family: 'Raleway', sans-serif;
     font-weight: 700;
     width: 100%;
     text-align: center;
-    margin-left: 10em;
-
   }
   
   @media(min-width: 768px) {
@@ -210,7 +150,6 @@ font-family: 'Raleway', sans-serif;
   /* BOTTOM NAVBAR */
   #bottom-navbar-container .container {
     justify-content: flex-end;
-    
   }
   
   #bottom-navbar-container a {
@@ -232,13 +171,7 @@ font-family: 'Raleway', sans-serif;
     padding: 1em;
     left: 12%;
     right: 12%;
-background-color: #f5ebdeb9;
-color: #000000;
-border-radius: 20px; 
-font-family: 'Poppins', sans-serif;
-box-shadow: 0 0 2px;
-
-}
+  }
   
   .carousel-caption h5 {
     font-size: 1.8em;
@@ -268,8 +201,9 @@ box-shadow: 0 0 2px;
   
   #mini-banners .col-12 {
     z-index: 1;
-    height: 400px;
-    padding: 1.5em;
+    height: 540px;
+    width: 270px;
+    padding: 1em;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -284,18 +218,17 @@ box-shadow: 0 0 2px;
   
   #mini-banners .col-12 h2 {
     text-transform: uppercase;
-    max-width: 90px;
+    max-width: 50px;
     font-size: 2.2em;
     font-weight: 700;
     line-height: 1em;
   }
   
   #mini-banners .col-12 img {
-    height: 180px;
+    height: 220px;
     position: absolute;
     right: 1rem;
     bottom: 1rem;
-    top: 130px;
   }
   
   #mini-banners .col-12 a {
@@ -306,34 +239,41 @@ box-shadow: 0 0 2px;
   }
   
   #mini-banners .col-12 a:hover {
-    color: #101010;
+    color: #7EC8E3;
   }
   
   #mini-banners #mini-banner-1 a:hover {
-    color: #F0960F;
-    font-family: 'Poppins', sans-serif;
+    color: #78b6c0;
   }
   
   #mini-banners #mini-banner-3 a {
     color: #101010;
-    font-family: 'Poppins', sans-serif;
-font-family: 'Raleway', sans-serif;
-    
   }
   
   #mini-banners #mini-banner-3 a:hover {
-    color: #C09578;
+    color: #263396;
+  }
+  
+  #mini-banner-1{
+    background-image: url('../pct1.png');
+  }
+  #mini-banner-2{
+    background-image: url('../pct2.png');
+  }
+  #mini-banner-3{
+    background-image: url('../pct3.png');
+  }
+  #mini-banner-4{
+    background-image: url('../pct4.png');
   }
   
   /* BEST SELLERS */
   #best-sellers {
     padding: 4em 0;
-
   }
   
   #best-sellers .row {
     margin: 0;
-    
   }
   
   #best-sellers .col-md-3 {
@@ -346,8 +286,6 @@ font-family: 'Raleway', sans-serif;
     font-size: 2.5em;
     margin-bottom: 1em;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-font-family: 'Raleway', sans-serif;
   }
   
   @media(min-width: 768px) {
@@ -359,14 +297,11 @@ font-family: 'Raleway', sans-serif;
   .card {
     text-align: center;
     border-radius: 0;
-background-color: #00000043;
-
-}
-
+  }
+  
   .card img {
-    width: 160px;
+    width: 140px;
     margin: 2em auto;
-    
   }
   
   .card .card-category {
@@ -376,22 +311,24 @@ background-color: #00000043;
   .card .card-text {
     margin: 2em 0;
     font-weight: bold;
-    font-family: 'Poppins', sans-serif;
   }
   
   .btn {
     background-color: transparent;
-    border-color: #F0960F;
+    border-color: #7EC8E3;
   }
   
   .btn:hover {
-    background-color: #F0960F;
-    border-color: #F0960F;
+    background-color: #7EC8E3;
+    border-color: #7EC8E3;
   }
   
   /* BOTTOM BANNER */
   #bottom-banner {
-    background-color: #101010; 
+    background-image: url('../banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: 6em;
     margin-bottom: 4em;
     text-align: center;
@@ -410,7 +347,7 @@ background-color: #00000043;
   }
   
   #bottom-banner img {
-    max-width: 305px;
+    max-width: 300px;
   }
   
   @media(min-width: 768px) {
@@ -461,31 +398,31 @@ background-color: #00000043;
   }
   
   #gallery .image-container:hover {
-    border-color: #F0960F;
+    border-color: #0000FF;
   }
   
   #insta1 {
-    background-image: url('../img/insta1.jpg');
+    background-image: url('../senhor.jpg');
   }
   
   #insta2 {
-    background-image: url('../img/insta2.jpg');
+    background-image: url('../fotobanner.png');
   }
   
   #insta3 {
-    background-image: url('../img/insta3.jpg');
+    background-image: url('../fotobanner1.jpg');
   }
   
   #insta4 {
-    background-image: url('../img/insta4.jpg');
+    background-image: url('../cadeira.jpg');
   }
   
   #insta5 {
-    background-image: url('../img/insta5.jpg');
+    background-image: url('../corda.jpg');
   }
   
   #insta6 {
-    background-image: url('../img/insta6.jpg');
+    background-image: url('../bluefit3.jpg');
   }
   
   /* FOOTER */
@@ -528,12 +465,12 @@ background-color: #00000043;
   }
   
   #footer-links-container li a:hover {
-    color: #F0960F;
+    color: #263396;
   }
   
   #footer-center {
-    border-left: 1px solid #F0960F;
-    border-right: 1px solid #F0960F;
+    border-left: 1px solid #626262;
+    border-right: 1px solid #626262;
   }
   
   #footer-center h3 {
@@ -541,7 +478,7 @@ background-color: #00000043;
   }
   
   #footer-center .store-phone {
-    color: #F0960F;
+    color: #0000FF;
     font-weight: bold;
     font-size: 2rem;
     margin-top: -15px;
@@ -581,7 +518,7 @@ background-color: #00000043;
   }
   
   #social-container i:hover {
-    color: #F0960F;
+    color: #7EC8E3;
   }
   
   /* COPY */
@@ -589,5 +526,140 @@ background-color: #00000043;
     text-align: center;
     padding: 30px;
   }
-
- 
+  #product-area {
+    background-color: #f9f9f9;
+    padding: 3rem;
+    text-align: center;
+    align-items: center;
+  }
+  
+  #product-area h2 {
+    color: #333;
+  }
+  
+  .product-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  #product-area p{
+    color: #333;
+  }
+  .form-select{
+    width: 100px;
+    align-items: center;
+    margin-left: 40%;
+  }
+  .favorite-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #ccc;
+    transition: color 0.3s;
+  }
+  
+  .favorite-btn.active {
+    color: red; /* ou qualquer cor desejada para o coração ativo */
+  }
+  /* Estilos para a área de produtos favoritos */
+  #favorites-area {
+    margin-top: 50px;
+  }
+  
+  #favorites-list {
+    margin-top: 20px;
+  }
+  
+  /* Estilos para o botão de favoritos */
+  #favorite-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #FF5733; /* Cor do coração (substitua pela cor desejada) */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  #favorite-button.active {
+    color: red; /* Cor do coração quando ativo (substitua pela cor desejada) */
+  }
+  
+  /* Estilos para os produtos favoritos */
+  #favorites-list p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  /* Adicione outros estilos aqui conforme necessário */
+  .container11{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 220px;
+  }
+  .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  }
+  
+  .container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  transition: 100ms;
+  }
+  
+  .checkmark {
+  top: 0;
+  left: 0;
+  height: 2em;
+  width: 2em;
+  transition: 100ms;
+  animation: dislike_effect 400ms ease;
+  }
+  
+  .container input:checked ~ .checkmark path {
+  fill: #0000FF;
+  stroke-width: 0;
+  }
+  
+  .container input:checked ~ .checkmark {
+  animation: like_effect 400ms ease;
+  }
+  
+  
+  
+  @keyframes like_effect {
+  0% {
+    transform: scale(0);
+  }
+  
+  50% {
+    transform: scale(1.2);
+  }
+  
+  100% {
+    transform: scale(1);
+  }
+  }
+  
+  @keyframes dislike_effect {
+  0% {
+    transform: scale(0);
+  }
+  
+  50% {
+    transform: scale(1.2);
+  }
+  
+  100% {
+    transform: scale(1);
+  }
+  }
