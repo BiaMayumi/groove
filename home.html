@@ -28,11 +28,16 @@
       <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
       <div id="navbar-items">
         <div></div>
-        <form class="d-flex" id="search-form">
-          <i class="bi bi-search primary-color"></i>
-          <input class="form-control me-2" type="search" placeholder="Busque o seu instrumento..." aria-label="Search">
-          <button class="btn secondary-bg-color" type="submit">Pesquisar</button>
-        </form>
+        <div class="search">
+            <input type="text" class="search__input" placeholder="Type your text">
+            <button class="search__button">
+                <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                    <g>
+                        <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                    </g>
+                </svg>
+            </button>
+        </div>
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="cadastrar.html">
@@ -41,24 +46,23 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" id="favorites-count" href="#">
-               
-              <i class="bi bi-heart"></i>
+               <i class="bi bi-heart"></i>
             </a>
-            <span class="qty-info">5</span>
+            <span class="qty-info">0</span>
           </li>
           <li class="nav-item" id="bag-item">
             <a class="nav-link" id="cart-count" href="#">
               <i class="bi bi-bag"></i>
               <b>R$ 0</b>
             </a>
-            <span class="qty-info">8</span>
+            <span class="qty-info">0</span>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <nav class="navbar navbar-expand-lg secondary-bg-color p-2" id="bottom-navbar-container">
-    <div class="container">
+    <div class="container-2">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
         <i class="bi bi-list"></i>
       </button>
@@ -120,88 +124,45 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <!-- MINI BANNERS -->
-    <div class="container" id="mini-banners">
-      <div class="row justify-content-around">
-        <div class="col-12 dark-bg-color" id="mini-banner-1">
-          <h2>Nova Coleção</h2>
-          <img src="img/" alt="Relógio 1">
-          <a href="#">Compre Agora</a>
-        </div>
-        <div class="col-12 secondary-bg-color" id="mini-banner-2">
-          <h2>Promoções</h2>
-          <img src="img/relogio2.png" alt="Relógio 1">
-          <a href="#">Compre Agora</a>
-        </div>
-        <div class="col-12 light-bg-color" id="mini-banner-3">
-          <h2 class="secondary-color">Edição Limitada</h2>
-          <a href="#">Compre Agora</a>
-          <img src="img/relogio3.png" alt="Relógio 1">
-        </div>
-      </div>
-    </div>
-  </div>
   <!-- BEST SELLERS -->
   <div class="container" id="best-sellers">
-    <h2 class="title primary-color">Best Sellers</h2>
+    <h2 class="title primary-color">Categorias</h2>
     <div class="row">
       <div class="col-12 col-md-3">
         <div class="card primary-bg-color">
-          <img src="img/relogio1.png" class="card-img-top img-fluid" alt="Relógio">
+          <img src="img/teclado.jpg" class="card-img-top img-fluid" alt="piano">
           <div class="card-body">
-            <p class="card-category secondary-color">Relógio</p>
-            <h5 class="card-title">Nome do produto</h5>
-            <p class="card-text primary-color">R$177.63</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
+            <p class="card-category secondary-color">piano</p>
+            <h5 class="card-title">Piano</h5>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-3">
         <div class="card primary-bg-color">
-          <img src="img/relogio4.png" class="card-img-top img-fluid" alt="Relógio">
+          <img src="img/guitarra1.jpg" class="card-img-top img-fluid" alt="Guitarra">
           <div class="card-body">
-            <p class="card-category secondary-color">Relógio</p>
-            <h5 class="card-title">Nome do produto</h5>
-            <p class="card-text primary-color">R$177.63</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
+            <p class="card-category secondary-color">Guitarra</p>
+            <h5 class="card-title">Guitarra</h5>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-3">
         <div class="card primary-bg-color">
-          <img src="img/relogio5.png" class="card-img-top img-fluid" alt="Relógio">
+          <img src="img/bateria.jpg" class="card-img-top img-fluid" alt="Relógio">
           <div class="card-body">
             <p class="card-category secondary-color">Relógio</p>
             <h5 class="card-title">Nome do produto</h5>
-            <p class="card-text primary-color">R$177.63</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-3">
         <div class="card primary-bg-color">
-          <img src="img/relogio6.png" class="card-img-top img-fluid" alt="Relógio">
+          <img src="img/violao.jpg" class="card-img-top img-fluid" alt="Relógio">
           <div class="card-body">
             <p class="card-category secondary-color">Relógio</p>
             <h5 class="card-title">Nome do produto</h5>
-            <p class="card-text primary-color">R$177.63</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- BANNER DESTAQUE -->
-  <div class="container-fluid" id="bottom-banner">
-    <div class="row">
-      <div class="col-12 col-md-8">
-        <p class="primary-color offer-subtitle">Desconto de até 75%</p>
-        <h2 class="light-color">Relógio X</h2>
-        <p class="secondary-color">Presenteie o seu amor com este relógio luxuoso</p>
-        <a href="#" class="btn btn-primary">Comprar agora</a>
-      </div>
-      <div class="col-12 col-md-4">
-        <img src="img/relogio7.png" alt="Relógio 7">
       </div>
     </div>
   </div>
@@ -283,23 +244,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- GALLERY -->
-  <div class="container-fluid" id="gallery">
-    <div class="row">
-      <div class="col-6 col-md-2 image-container" id="insta1">
-      </div>
-      <div class="col-6 col-md-2 image-container" id="insta2">
-      </div>
-      <div class="col-6 col-md-2 image-container" id="insta3">
-      </div>
-      <div class="col-6 col-md-2 image-container" id="insta4">
-      </div>
-      <div class="col-6 col-md-2 image-container" id="insta5">
-      </div>
-      <div class="col-6 col-md-2 image-container" id="insta6">
       </div>
     </div>
   </div>

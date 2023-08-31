@@ -90,7 +90,66 @@ body {
 .navbar-brand img{
     width: 6em;
 }
+
+.navbar .container-2 .nav-item a{
+    margin-left: 10em;
+}
   
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+  
+.search__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 20em;
+    transition: all ease-in-out .5s;
+    margin-right: -2rem;
+}
+  
+.search__input:hover, .search__input:focus {
+    box-shadow: 0 0 1em #00000013;
+}
+  
+.search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+}
+  
+.search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #ccc;
+}
+  
+.search__input:focus + .search__button {
+    background-color: #f0eeee;
+}
+  
+.search__button {
+    border: none;
+    background-color: #f4f2f2;
+    margin-top: 0;
+    margin-left: -1em;
+}
+  
+.search__button:hover {
+    cursor: pointer;
+}
+  
+.search__icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: #b4b4b4;
+}
+
   @media(min-width: 768px) {
     .navbar-brand {
       text-align: left;
@@ -120,30 +179,6 @@ body {
       width: 50%;
       margin: 0;
     }
-  }
-  
-  #search-form,
-  #news-form {
-    border: 2px solid #626262;
-    border-radius: 3px;
-    padding: 5px 15px;
-  }
-  
-  #search-form input,
-  #news-form input {
-    background-color: transparent;
-    border: none;
-    color: #FFF;
-  }
-  
-  #search-form input:focus,
-  #news-form input:focus {
-    box-shadow: none;
-  }
-  
-  #search-form input::placeholder,
-  #news-form input::placeholder {
-    color: #FFF;
   }
   
   /* BOTTOM NAVBAR */
@@ -214,46 +249,6 @@ body {
     }
   }
   
-  #mini-banners .col-12 h2 {
-    text-transform: uppercase;
-    font-size: 1.2em;
-    font-weight: 700;
-    line-height: 1em;
-  }
-  
-  #mini-banners .col-12 img {
-    height: 220px;
-    position: absolute;
-    right: 0;
-    bottom: 1rem;
-    width: 100%;
-    border-radius: 2px;
-    top: 4em;
-  }
-  
-  #mini-banners .col-12 a {
-    font-weight: bold;
-    color: #FFF;
-    font-size: .8rem;
-    transition: .5s;
-  }
-  
-  #mini-banners .col-12 a:hover {
-    color: #101010;
-  }
-  
-  #mini-banners #mini-banner-1 a:hover {
-    color: #C09578;
-  }
-  
-  #mini-banners #mini-banner-3 a {
-    color: #101010;
-  }
-  
-  #mini-banners #mini-banner-3 a:hover {
-    color: #C09578;
-  }
-  
   /* BEST SELLERS */
   #best-sellers {
     padding: 4em 0;
@@ -272,23 +267,25 @@ body {
     font-weight: 900;
     font-size: 2.5em;
     margin-bottom: 1em;
-    text-align: center;
+    color: var(--color-orange);
   }
   
   @media(min-width: 768px) {
     .title {
-      text-align: left;
+      text-align: center;
     }
   }
   
-  .card {
+.card {
     text-align: center;
-    border-radius: 0;
-  }
+    border-radius: 2em;
+    background-color: var(--color-black2);
+}
   
   .card img {
-    width: 140px;
-    margin: 2em auto;
+    width: 100%;
+    margin: 0em auto;
+    border-radius: 10px;
   }
   
   .card .card-category {
@@ -302,37 +299,14 @@ body {
   
   .btn {
     background-color: transparent;
-    border-color: #C09578;
+    border-color: var(--color-orange);
   }
   
   .btn:hover {
-    background-color: #C09578;
-    border-color: #C09578;
+    background-color: var(--color-orange);
+    border-color: var(--color-orange);
   }
   
-  /* BOTTOM BANNER */
-  #bottom-banner {
-    background-color: #101010; 
-    padding: 6em;
-    margin-bottom: 4em;
-    text-align: center;
-  }
-  
-  #bottom-banner .offer-subtitle,
-  #bottom-banner h2 {
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  
-  #bottom-banner .btn {
-    margin: 2em;
-    font-weight: bold;
-    padding: 1em;
-  }
-  
-  #bottom-banner img {
-    max-width: 175px;
-  }
   
   @media(min-width: 768px) {
     #bottom-banner h2 {
@@ -371,43 +345,6 @@ body {
     margin: 2em auto;
   }
   
-  /* GALLERY */
-  #gallery .image-container {
-    background-size: cover;
-    background-position: center;
-    height: 225px;
-    cursor: pointer;
-    transition: .5s;
-    border: 3px solid #101010;
-  }
-  
-  #gallery .image-container:hover {
-    border-color: #C09578;
-  }
-  
-  #insta1 {
-    background-image: url('../img/insta1.jpg');
-  }
-  
-  #insta2 {
-    background-image: url('../img/insta2.jpg');
-  }
-  
-  #insta3 {
-    background-image: url('../img/insta3.jpg');
-  }
-  
-  #insta4 {
-    background-image: url('../img/insta4.jpg');
-  }
-  
-  #insta5 {
-    background-image: url('../img/insta5.jpg');
-  }
-  
-  #insta6 {
-    background-image: url('../img/insta6.jpg');
-  }
   
   /* FOOTER */
   #footer-links-container {
