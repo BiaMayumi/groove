@@ -83,6 +83,7 @@ h1{
 
 h1 .cordiferente{
     color: var(--color-orange);
+
 }
 
 .single-line {
@@ -123,6 +124,7 @@ h1 .cordiferente{
 
 .categorias{
     background-color: var(--color-white);
+    font-family: 'Poppins', sans-serif;
 }
 .categorias h1{
     font-family: 'Poppins', sans-serif;
