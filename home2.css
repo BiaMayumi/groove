@@ -240,8 +240,11 @@ input:focus~.input-border {
   padding: 1em;
   left: 12%;
   right: 12%;
-  background-color: #fff5f54b;
+  background-color: #f5ebdeb9;
   color: #000000;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 0 2px;
 
 }
 
@@ -297,22 +300,12 @@ input:focus~.input-border {
 }
 
 #mini-banners .col-12 img {
-  height: 190px;
+  height: 180px;
   position: absolute;
   right: 1rem;
   bottom: 1rem;
   top: 130px;
 }
-
-
-#mini-banner-2 .col-12 img {
-  height: 10px;
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-  top: 130px;
-}
-
 
 #mini-banners .col-12 a {
   font-weight: bold;
@@ -328,16 +321,7 @@ input:focus~.input-border {
 #mini-banners #mini-banner-1 a:hover {
   color: #F0960F;
   font-family: 'Poppins', sans-serif;
-  
 }
-
-#mini-banners #mini-banner-1 a:img {
-  color: #F0960F;
-  font-family: 'Poppins', sans-serif;
-  
-}
-
-
 
 #mini-banners #mini-banner-3 a {
   color: #101010;
@@ -403,7 +387,6 @@ input:focus~.input-border {
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
 }
-
 
 .btn {
   background-color: transparent;
@@ -474,11 +457,6 @@ input:focus~.input-border {
   height: 150px;
   width: 90px;
   margin: 2em auto;
-}
-
-.col-12 .mini-banner-2{
-width: 30px;
-
 }
 
 /* GALLERY */
