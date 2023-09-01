@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Estilos para caixas de cartão */
 .card {
     border: 1px solid var(--color-black2);
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px;
     margin: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -293,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px;
   margin: 10px;
   width: 20em;
-  margin-left: 40em;
+  margin-left: 37em;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   margin-right: 4em;
 }
@@ -304,9 +304,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px;
   margin: 10px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  margin-top: -11em;
-  margin-left: 4em;
+position: absolute;  margin-top: -11em;
+  margin-left: 18em;
+
 }
 
 .card-body-2{

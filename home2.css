@@ -364,7 +364,7 @@ input:focus~.input-border {
   text-align: center;
   border-radius: 0;
   background-color: #00000043;
-  height: 10em;
+
 }
 
 .card img {
@@ -454,6 +454,43 @@ input:focus~.input-border {
   margin: 2em auto;
 }
 
+/* GALLERY */
+#gallery .image-container {
+  background-size: cover;
+  background-position: center;
+  height: 225px;
+  cursor: pointer;
+  transition: .5s;
+  border: 3px solid #101010;
+}
+
+#gallery .image-container:hover {
+  border-color: #ff8400;
+}
+
+#insta1 {
+  background-image: url('img/bateria.png');
+}
+
+#insta2 {
+  background-image: url('img/oka.png');
+}
+
+#insta3 {
+  background-image: url('img/guitarra.jpg');
+}
+
+#insta4 {
+  background-image: url('img/saxo.jpg');
+}
+
+#insta5 {
+  background-image: url('img/baixo.jpeg');
+}
+
+#insta6 {
+  background-image: url('img/violino.jpeg');
+}
 
 /* FOOTER */
 #footer-links-container {
