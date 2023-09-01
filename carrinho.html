@@ -103,14 +103,15 @@
                                         </strong></p>
                                     <p>Color: Natural</p>
                                     <p>Size: Pequeno</p>
-
                                     <button type="button" class="btn btn-primary btn-sm me-1 mb-2"
-                                        data-mdb-toggle="tooltip" title="Remove item">
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-danger btn-sm mb-2" data-mdb-toggle="tooltip"
-                                        title="Move to the wish list">
-                                        <i class="fas fa-heart"></i>
+                                    data-mdb-toggle="tooltip" title="Remove item">
+                                    <img src="img/lixeira.png" alt="Lixeira" width="20">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm mb-2" data-mdb-toggle="tooltip"
+                                    title="Adicionar aos favoritos">
+                                    <img src="img/coração.png" alt="Favoritos" width="20">
+                                </button>
                                     </button>
                                     <!-- Data -->
                                 </div>
@@ -127,8 +128,7 @@
                                                 class="form-control" onchange="updateTotal()">
                                             <label class="form-label" for="quantity2">Quantidade</label>
                                         </div>
-
-                                        <button class="btn btn-primary px-3 ms-2" onclick="incrementQuantity(2)">
+                                    <button class="btn btn-primary px-3 ms-2" onclick="incrementQuantity(2)">
                                             <i class="fas fa-plus"></i>
                                         </button>
                                     </div>
@@ -155,54 +155,21 @@
                             <div id="resultadoFrete">
                                 <!-- Aqui será exibido o resultado do cálculo de frete -->
                             </div>
-
-                            <script>
-                                function decrementQuantity(itemId) {
-                                    const quantityField = document.getElementById('quantity' + itemId);
-                                    if (quantityField.value > 1) {
-                                        quantityField.value--;
-                                        updateTotal();
-                                    }
-                                }
-
-                                function incrementQuantity(itemId) {
-                                    const quantityField = document.getElementById('quantity' + itemId);
-                                    quantityField.value++;
-                                    updateTotal();
-                                }
-
-                                function updateTotal() {
-                                    const quantity1 = parseInt(document.getElementById('quantity1').value);
-                                    const price1 = parseFloat(document.getElementById('itemPrice1').innerText);
-                                    const quantity2 = parseInt(document.getElementById('quantity2').value);
-                                    const price2 = parseFloat(document.getElementById('itemPrice2').innerText);
-
-                                    const total = (quantity1 * price1 + quantity2 * price2).toFixed(2);
-
-                                    document.getElementById('totalPrice').innerText = 'R$ ' + total;
-                                }
-
-                                document.getElementById('calcularFrete').addEventListener('click', function () {
-                                    const cepDestino = document.getElementById('cepDestino').value;
-
-                                    // Substitua o URL da API e a chave de API pelo seu serviço de cálculo de frete
-                                    const apiUrl = 'URL_DA_SUA_API_DE_CALCULO_DE_FRETE?key=SUA_CHAVE_API&cep_destino=' + cepDestino;
-
-                                    fetch(apiUrl)
-                                        .then(response => response.json())
-                                        .then(data => {
-                                            // Exiba o resultado do cálculo de frete na página
-                                            const resultadoFrete = document.getElementById('resultadoFrete');
-                                            resultadoFrete.innerHTML = 'Custo do frete: R$ ' + data.valor;
-                                        })
-                                        .catch(error => {
-                                            console.error('Erro ao calcular o frete:', error);
-                                        });
-                                });
-
-                                // Chame a função de atualização do total ao carregar a página
-                                updateTotal();
-                            </script>
+                        <script>
+                            function updateTotal() {
+                                const quantity1 = parseInt(document.getElementById('quantity1').value);
+                                const price1 = parseFloat(document.getElementById('itemPrice1').innerText);
+                                const quantity2 = parseInt(document.getElementById('quantity2').value);
+                                const price2 = parseFloat(document.getElementById('itemPrice2').innerText);
+                            
+                                const total = (quantity1 * price1 + quantity2 * price2).toFixed(2);
+                            
+                                document.getElementById('totalPrice').innerText = 'R$ ' + total;
+                            }
+                            
+                            // Chame a função de atualização do total ao carregar a página
+                            updateTotal();
+                          </script>  
                         </div>
                     </div>
                     <div class="card mb-4 mb-lg-0">
@@ -229,7 +196,7 @@
                                 <li
                                     class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                                     Produtos
-                                    <span>R$ <span id="totalPrice">0.00</span></span>
+                                    <span><span id="totalPrice">0.00</span></span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center px-0">
                                     Envio
@@ -239,18 +206,15 @@
                                     class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                                     <div>
                                         <strong>Total</strong>
-                                        <strong>
-                                            <p class="mb-0">(incluindo taxas)
-                                            </p>
-                                        </strong>
+
                                     </div>
-                                    <span><strong>R$ <span id="totalPriceWithShipping">0.00</span></strong></span>
+                                    <span><strong>R$ <span id="totalPrice">0.00</span></strong></span>
                                 </li>
                             </ul>
 
-                            <button type="button" class="btn btn-primary btn-lg btn-block">
+                            <a href="finalizacao.html"><button type="button" class="btn btn-primary btn-lg btn-block">
                                 Finalizar compra
-                            </button>
+                            </button></a>
                         </div>
                     </div>
                 </div>
