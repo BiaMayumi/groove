@@ -1,8 +1,3 @@
-* {
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Poppins', sans-serif;
-}
-
 body {
   background-color: #252525;
   color: #FFF;
@@ -70,8 +65,8 @@ input:focus~.input-border {
 /* === if you want to do animated border on typing === */
 /* remove input:focus code and uncomment below code */
 /* input:valid ~ .input-border{
-     width: 100%;
-   } */
+       width: 100%;
+     } */
 
 
 /* Hover on Input */
@@ -91,8 +86,8 @@ input:focus~.input-border {
 /* === if you want to do animated border on typing === */
 /* remove input:focus code and uncomment below code */
 /* input:valid ~ .input-border{
-     width: 100%;
-   } */
+       width: 100%;
+     } */
 
 .secondary-bg-color {
   background-color: #F0960F;
@@ -369,7 +364,7 @@ input:focus~.input-border {
   text-align: center;
   border-radius: 0;
   background-color: #00000043;
-
+  height: 10em;
 }
 
 .card img {
@@ -459,43 +454,6 @@ input:focus~.input-border {
   margin: 2em auto;
 }
 
-/* GALLERY */
-#gallery .image-container {
-  background-size: cover;
-  background-position: center;
-  height: 225px;
-  cursor: pointer;
-  transition: .5s;
-  border: 3px solid #101010;
-}
-
-#gallery .image-container:hover {
-  border-color: #ff8400;
-}
-
-#insta1 {
-  background-image: url('img/bateria.png');
-}
-
-#insta2 {
-  background-image: url('img/oka.png');
-}
-
-#insta3 {
-  background-image: url('img/guitarra.jpg');
-}
-
-#insta4 {
-  background-image: url('img/saxo.jpg');
-}
-
-#insta5 {
-  background-image: url('img/baixo.jpeg');
-}
-
-#insta6 {
-  background-image: url('img/violino.jpeg');
-}
 
 /* FOOTER */
 #footer-links-container {
@@ -503,7 +461,7 @@ input:focus~.input-border {
 }
 
 #footer .footer-column {
-  padding: 2em; 
+  padding: 2em;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -512,7 +470,7 @@ input:focus~.input-border {
 
 @media(mn-width: 795px) {
   #footer .footer-column {
-      padding: 5em 2em;
+    padding: 5em 2em;
   }
 }
 
@@ -528,7 +486,7 @@ input:focus~.input-border {
 
 @media(mn-width: 795px) {
   #footer-links-container li {
-      text-align: left;
+    text-align: left;
   }
 }
 
@@ -575,6 +533,146 @@ input:focus~.input-border {
 
 #news-form .btn {
   color: #FFF;
+}
+
+#social-container {
+  margin: 20px auto;
+}
+
+#social-container i {
+  font-size: 1.5em;
+  margin: 10px;
+  cursor: pointer;
+  color: #626262;
+  transition: .3s;
+}
+
+#social-container i:hover {
+  color: #C09578;
+}
+
+/* COPY */
+#copy-container {
+  text-align: center;
+  padding: 30px;
+}
+
+/* GALLERY */
+#gallery .image-container {
+  background-size: cover;
+  background-position: center;
+  height: 225px;
+  cursor: pointer;
+  transition: .5s;
+  border: 3px solid #626262;
+}
+
+#gallery .image-container:hover {
+  border-color: #626262;
+}
+
+#insta1 {
+  background-image: url('img/bateria.jpg');
+}
+
+#insta2 {
+  background-image: url('img/piano.jpg');
+}
+
+#insta3 {
+  background-image: url('img/guitarra.jpeg');
+}
+
+#insta4 {
+  background-image: url('img/saxo.jpg');
+}
+
+#insta5 {
+  background-image: url('img/baixo.jpeg');
+}
+
+#insta6 {
+  background-image: url('img/violino.jpeg');
+}
+
+/* FOOTER */
+#footer-links-container {
+  border-bottom: 1px solid #626262;
+}
+
+#footer .footer-column {
+  padding: 2em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media(mn-width: 795px) {
+  #footer .footer-column {
+    padding: 5em 2em;
+  }
+}
+
+#footer-links-container h3 {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+#footer-links-container li {
+  font-size: .8em;
+  text-align: center;
+}
+
+@media(mn-width: 795px) {
+  #footer-links-container li {
+    text-align: left;
+  }
+}
+
+#footer-links-container li a {
+  text-decoration: none;
+}
+
+#footer-links-container li a:hover {
+  color: #626262;
+}
+
+#footer-center {
+  border-left: 1px solid #626262;
+  border-right: 1px solid #626262;
+}
+
+#footer-center h3 {
+  font-weight: 900;
+}
+
+#footer-center .store-phone {
+  color: #ff8400;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: -15px;
+}
+
+/* NEWS */
+#newsletter-container {
+  background-color: #101010;
+  border-bottom: 1px solid #626262;
+  text-align: center;
+  padding: 20px;
+}
+
+#news-form {
+  max-width: 600px;
+  margin: 15px auto;
+}
+
+#news-form i {
+  font-size: 1.5em;
+}
+
+#news-form .btn {
+  color: #626262;
 }
 
 #social-container {
