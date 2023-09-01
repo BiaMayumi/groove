@@ -62,13 +62,6 @@ input:focus~.input-border {
   width: 100%;
 }
 
-/* === if you want to do animated border on typing === */
-/* remove input:focus code and uncomment below code */
-/* input:valid ~ .input-border{
-       width: 100%;
-     } */
-
-
 /* Hover on Input */
 input:hover {
   background: var(--input-hovered-color);
@@ -78,16 +71,9 @@ input:focus {
   outline: none;
 }
 
-/* here is code of animated border */
 input:focus~.input-border {
   width: 100%;
 }
-
-/* === if you want to do animated border on typing === */
-/* remove input:focus code and uncomment below code */
-/* input:valid ~ .input-border{
-       width: 100%;
-     } */
 
 .secondary-bg-color {
   background-color: #F0960F;
@@ -329,20 +315,64 @@ input:focus~.input-border {
   color: #C09578;
 }
 
-/* BEST SELLERS */
-#best-sellers {
-  padding: 4em 0;
-
+/* Estilos para o container dos produtos mais vendidos */
+#best-sellers-container {
+  background-color: #f8f8f8; /* Cor de fundo do container */
+  padding: 20px; /* Espaçamento interno do container */
+  border: 1px solid #ddd; /* Borda do container */
+  border-radius: 5px; /* Arredondamento das bordas */
+  margin-bottom: 20px; /* Espaçamento inferior do container */
 }
 
-#best-sellers .row {
-  margin: 0;
-
+/* Estilos para o título "Mais vendidos" dentro do container */
+#best-sellers-container h2 {
+  font-size: 24px; /* Tamanho da fonte do título */
+  color: #333; /* Cor do texto do título */
+  margin-bottom: 10px; /* Espaçamento inferior do título */
 }
 
-#best-sellers .col-md-3 {
-  padding: 0;
+/* Estilos para cada coluna dos produtos dentro do container */
+#best-sellers-container .col-md-3 {
+  margin-bottom: 20px; /* Espaçamento inferior entre as colunas */
 }
+
+/* Estilos para os cartões de produto */
+#best-sellers-container .card {
+  border: none; /* Remove a borda dos cartões */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave nos cartões */
+}
+
+/* Estilos para o título do produto */
+#best-sellers-container .card-title {
+  font-size: 18px; /* Tamanho da fonte do título do produto */
+  font-weight: bold; /* Peso da fonte (negrito) */
+  color: #333; /* Cor do texto do título do produto */
+}
+
+/* Estilos para a categoria do produto */
+#best-sellers-container .card-category {
+  font-size: 14px; /* Tamanho da fonte da categoria */
+  color: #666; /* Cor do texto da categoria */
+}
+
+/* Estilos para o preço do produto */
+#best-sellers-container .card-text {
+  font-size: 16px; /* Tamanho da fonte do preço */
+  font-weight: bold; /* Peso da fonte (negrito) */
+  color: #007bff; /* Cor do texto do preço */
+}
+
+/* Estilos para o botão "Comprar" dos produtos */
+#best-sellers-container .btn-primary {
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  font-weight: bold; /* Peso da fonte (negrito) */
+  border: none; /* Remove a borda do botão */
+  padding: 5px 15px; /* Espaçamento interno do botão */
+}
+
+/* Estilize outras propriedades de acordo com suas preferências */
+
 
 .title {
   text-transform: uppercase;
@@ -364,7 +394,7 @@ input:focus~.input-border {
   text-align: center;
   border-radius: 0;
   background-color: #00000043;
-
+  height: 10em;
 }
 
 .card img {
@@ -454,43 +484,6 @@ input:focus~.input-border {
   margin: 2em auto;
 }
 
-/* GALLERY */
-#gallery .image-container {
-  background-size: cover;
-  background-position: center;
-  height: 225px;
-  cursor: pointer;
-  transition: .5s;
-  border: 3px solid #101010;
-}
-
-#gallery .image-container:hover {
-  border-color: #ff8400;
-}
-
-#insta1 {
-  background-image: url('img/bateria.png');
-}
-
-#insta2 {
-  background-image: url('img/oka.png');
-}
-
-#insta3 {
-  background-image: url('img/guitarra.jpg');
-}
-
-#insta4 {
-  background-image: url('img/saxo.jpg');
-}
-
-#insta5 {
-  background-image: url('img/baixo.jpeg');
-}
-
-#insta6 {
-  background-image: url('img/violino.jpeg');
-}
 
 /* FOOTER */
 #footer-links-container {
