@@ -373,7 +373,7 @@ input:focus~.input-border {
 }
 
 .card img {
-  width: 160px;
+  width: 19 0px;
   margin: 2em auto;
 
 }
@@ -470,40 +470,40 @@ input:focus~.input-border {
 }
 
 #gallery .image-container:hover {
-  border-color: #F0960F;
+  border-color: #ff8400;
 }
 
 #insta1 {
-  background-image: url('../img/insta1.jpg');
+  background-image: url('img/bateria.png');
 }
 
 #insta2 {
-  background-image: url('../img/insta2.jpg');
+  background-image: url('img/oka.png');
 }
 
 #insta3 {
-  background-image: url('../img/insta3.jpg');
+  background-image: url('img/guitarra.jpg');
 }
 
 #insta4 {
-  background-image: url('../img/insta4.jpg');
+  background-image: url('img/saxo.jpg');
 }
 
 #insta5 {
-  background-image: url('../img/insta5.jpg');
+  background-image: url('img/baixo.jpeg');
 }
 
 #insta6 {
-  background-image: url('../img/insta6.jpg');
+  background-image: url('img/violino.jpeg');
 }
 
 /* FOOTER */
 #footer-links-container {
-  border-bottom: 1px solid #626262;
+  border-bottom: 1px solid #ff8400;
 }
 
 #footer .footer-column {
-  padding: 2em;
+  padding: 2em; 
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -512,7 +512,7 @@ input:focus~.input-border {
 
 @media(mn-width: 795px) {
   #footer .footer-column {
-    padding: 5em 2em;
+      padding: 5em 2em;
   }
 }
 
@@ -528,7 +528,7 @@ input:focus~.input-border {
 
 @media(mn-width: 795px) {
   #footer-links-container li {
-    text-align: left;
+      text-align: left;
   }
 }
 
@@ -537,12 +537,12 @@ input:focus~.input-border {
 }
 
 #footer-links-container li a:hover {
-  color: #F0960F;
+  color: #ff8400;
 }
 
 #footer-center {
-  border-left: 1px solid #F0960F;
-  border-right: 1px solid #F0960F;
+  border-left: 1px solid #626262;
+  border-right: 1px solid #626262;
 }
 
 #footer-center h3 {
@@ -550,7 +550,7 @@ input:focus~.input-border {
 }
 
 #footer-center .store-phone {
-  color: #F0960F;
+  color: #ff8400;
   font-weight: bold;
   font-size: 2rem;
   margin-top: -15px;
@@ -590,7 +590,7 @@ input:focus~.input-border {
 }
 
 #social-container i:hover {
-  color: #F0960F;
+  color: #C09578;
 }
 
 /* COPY */
@@ -598,15 +598,3 @@ input:focus~.input-border {
   text-align: center;
   padding: 30px;
 }
-
-  #ukulele{
-    height: 6.5em;
-  }
-
-  #bateria{
-    height: 14.5em;
-  }
-
-  #piano{
-    height: 11.5em;
-  }
