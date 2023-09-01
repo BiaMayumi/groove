@@ -3,25 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>GROOVE</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src="img/violao1.png" class="img-thumbnail" alt="...">
+    <div class="image">
+        <label>
+            <input type="radio" name="image" value="img/violao1-PhotoRoom.png-PhotoRoom.png" checked>
+            Preto
+        </label>
+        <label>
+            <input type="radio" name="image" value="img/violao2.webp">
+            Natural
+        </label>
+    </div>
+
+    <img src="img/violao1-PhotoRoom.png-PhotoRoom.png" class="img-thumbnail" id="product-image" alt="...">
     
-     <h1> Violão clássico Giannini Start N-14 <br> para destros preta sabina sólida <br> verniz brilhante. </h1>
-     <h2> R$ 349,99 </h2>
+    <h1> Violão clássico Giannini Start N-14 <br> para destros, preto e natural <br> verniz brilhante. </h1>
+    <h2> R$ 349,99 </h2>
     <h3> Em 12x de R$ 33,84</h3>
 
-    <a href="#" class="link">Ver os meios de pagamento</a>
+    <a href="#" class="link">Ver meios de pagamento</a>
 
     <div class="d-grid gap-2 col-6 mx-auto">
-    <button class="botao" type="button">Comprar agora</button>
-    <button class="botao1" type="button">Adicionar ao carrinho</button>
-      </div>
+        <a href=''><button class="botao" type="button" id="comprar">Comprar agora </button></a>
+        <a href=''><button class="botao1" type="button" id="add">Adicionar ao carrinho</button></a>
+    </div>
 
+    <script>
+        // JavaScript para atualizar a imagem com base na escolha do usuário
+        const imageOptions = document.querySelectorAll('input[name="image"]');
+        const productImage = document.getElementById('product-image');
+
+        imageOptions.forEach(option => {
+            option.addEventListener('change', () => {
+                productImage.src = option.value;
+            });
+        });
+    </script>
 </body>
 </html>
