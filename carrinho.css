@@ -1,0 +1,361 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #252525;
+    color: #FFF;
+  
+  }
+  
+  .img {
+    width: 130px;
+    position: absolute;
+  
+  }
+  
+  .primary-bg-color {
+    background-color: #000000;
+  }
+  
+  .form {
+    --width-of-input: 200px;
+    --border-height: 1px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --border-after-color: #5891ff;
+    --input-hovered-color: #4985e01f;
+    position: relative;
+    width: var(--width-of-input);
+  }
+  
+  /* styling of Input */
+  .input {
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+  }
+  
+  /* styling of animated border */
+  .input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+  }
+  
+  /* Hover on Input */
+  input:hover {
+    background: var(--input-hovered-color);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  /* here is code of animated border */
+  input:focus~.input-border {
+    width: 100%;
+  }
+  
+  /* === if you want to do animated border on typing === */
+  /* remove input:focus code and uncomment below code */
+  /* input:valid ~ .input-border{
+       width: 100%;
+     } */
+  
+  
+  /* Hover on Input */
+  input:hover {
+    background: var(--input-hovered-color);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  /* here is code of animated border */
+  input:focus~.input-border {
+    width: 100%;
+  }
+  
+  /* === if you want to do animated border on typing === */
+  /* remove input:focus code and uncomment below code */
+  /* input:valid ~ .input-border{
+       width: 100%;
+     } */
+  
+  .secondary-bg-color {
+    background-color: #F0960F;
+  }
+  
+  .light-bg-color {
+    background-color: #FCF5EB
+  }
+  
+  .dark-bg-color {
+    background-color: #101010;
+  }
+  
+  .primary-color {
+    color: #F0960F;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .secondary-color {
+    color: #626262;
+  }
+  
+  .light-color {
+    color: #FCF5EB
+  }
+  
+  /* NAVBAR */
+  #navbar .navbar-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  #navbar .navbar-nav li {
+    margin-left: 1em;
+  }
+  
+  #navbar a,
+  #navbar button {
+    color: #FFF;
+  }
+  
+  
+  
+  #navbar li {
+    position: relative;
+    margin-left: 10em;
+  }
+  
+  #navbar i {
+    font-size: 20px;
+  }
+  
+  
+  #bag-item span {
+    left: 20px;
+  }
+  
+  .navbar-brand {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    margin-left: 10em;
+  
+  }
+  
+  @media(min-width: 768px) {
+    .navbar-brand {
+      text-align: left;
+    }
+  }
+  
+  #navbar-items {
+    justify-content: space-between;
+  }
+  
+  @media(min-width: 768px) {
+    #navbar-items {
+      display: flex;
+      min-width: 80%;
+    }
+  }
+  
+  #search-form,
+  #news-form {
+    width: 100%;
+    margin: 2em 0;
+  }
+  
+  @media(min-width: 768px) {
+  
+    #search-form,
+    #news-form {
+      width: 50%;
+      margin: 0;
+    }
+  }
+  
+  #search-form,
+  #news-form {
+    border: 2px solid #626262;
+    border-radius: 3px;
+    padding: 5px 15px;
+  }
+  
+  #search-form input,
+  #news-form input {
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+  }
+  
+  #search-form input:focus,
+  #news-form input:focus {
+    box-shadow: none;
+  }
+  
+  #search-form input::placeholder,
+  #news-form input::placeholder {
+    color: #FFF;
+  }
+  
+  /* BOTTOM NAVBAR */
+  #bottom-navbar-container .container {
+    justify-content: flex-end;
+  
+  }
+  
+  #bottom-navbar-container a {
+    color: #FFF;
+    font-weight: 600;
+  }
+  
+  .navbar-toggler {
+    font-size: 1.5em;
+  }
+  
+  /* BANNERS */
+  #banners-container {
+    padding: 0;
+  }
+
+/* Definindo as variáveis de cores */
+:root {
+    --color-black: #252525;
+    --color-black2: #101010;
+    --color-orange: #ffa6008c;
+    --color-white: #ffffff;
+    --color-white2: #FCF5EB;
+    --color-beige: #C09578;
+}
+
+/* Estilos gerais para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+/* Estilos para links */
+a {
+    color: var(--color-orange);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para cabeçalhos */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-black);
+}
+
+/* Estilos para botões */
+.btn {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+/* Estilos para caixas de cartão */
+.card {
+    background-color: var(--color-white2);
+    border: 1px solid var(--color-black2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Outros estilos personalizados */
+/* Por favor, adicione seus estilos personalizados aqui */
+
+/* Exemplo de classe personalizada para um botão de destaque */
+.highlight-button {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.highlight-button:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: var(--color-black2);
+    color: var(--color-white);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para cabeçalho */
+header {
+    background-color: var(--color-black2);
+    color: var(--color-white);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para uma classe de destaque */
+.highlight {
+    color: var(--color-orange);
+    font-weight: bold;
+}
+
+/* Estilos para uma classe de fundo escuro */
+.dark-bg {
+    background-color: var(--color-black2);
+    color: var(--color-white);
+    padding: 10px;
+}
+
+/* Estilos para uma classe de fundo claro */
+.light-bg {
+    background-color: var(--color-white2);
+    color: var(--color-black);
+    padding: 10px;
+}
+
+/* Estilos para um botão de ícone */
+.icon-button {
+    background: none;
+    border: none;
+    color: var(--color-orange);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icon-button:hover {
+    color: var(--color-black);
+}
+
