@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROOVE</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="image">
+        <label>
+            <input type="radio" name="image" value="img/batery.png" checked>
+            Vermelho
+        </label>
+        <label>
+            <input type="radio" name="image" value="img/bateriapreta.png">
+            Preto
+        </label>
+    </div>
+
+    <img src="img/batery.png" class="img-thumbnail" id="product-image" alt="...">
+    
+    <h1> Violão clássico Giannini Start N-14 <br> para destros, preto e natural <br> verniz brilhante. </h1>
+    <h2> R$ 349,99 </h2>
+    <h3> Em 12x de R$ 33,84</h3>
+
+    <a href="#" class="link">Ver meios de pagamento</a>
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <a href=''><button class="botao" type="button" id="comprar">Comprar agora </button></a>
+        <a href=''><button class="botao1" type="button" id="add">Adicionar ao carrinho</button></a>
+    </div>
+
+    <script>
+        // JavaScript para atualizar a imagem com base na escolha do usuário
+        const imageOptions = document.querySelectorAll('input[name="image"]');
+        const productImage = document.getElementById('product-image');
+
+        imageOptions.forEach(option => {
+            option.addEventListener('change', () => {
+                productImage.src = option.value;
+            });
+        });
+    </script>
+
+    <style>
+        * {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+
+img {
+    width: 350px;
+    margin: 230px;
+margin-left: 100px;    
+position: absolute;
+    margin-top: 130px;
+  
+}
+
+h1 {
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 100px;
+    font-size: 25px;
+    font-family:  'Poppins', 'sans-serif';
+}
+
+h2 {
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 237px;
+    font-size: 25px;
+    font-family:  'Poppins', 'sans-serif';
+}
+
+h3 {
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 270px;
+    font-size: 15px;
+    font-family:  'Poppins', 'sans-serif';
+}
+
+.link {
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 360px;
+}
+
+.botao {
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 410px;
+    background-color: rgb(227, 134, 52);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 250px;
+    height: 35px;
+    font-weight: bolder;
+
+}
+
+.botao1 {
+    position: absolute;
+    margin-left: 790px;
+    margin-top: 412px;
+    background-color: rgb(227, 134, 52);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 250px;
+    height: 35px;
+    font-weight: bolder;
+
+}
+
+#comprar {
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 260px;
+    box-shadow: 3px 2px 10px rgb(58, 57, 57);
+}
+
+#add {
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 260px;
+    box-shadow: 3px 2px 10px rgb(58, 57, 57);
+
+}
+
+.image {
+    position: absolute;
+    margin-left: 492px;
+    margin-top: 315px;
+    width: 300px;
+}
+
+    </style>
+</body>
+</html>
